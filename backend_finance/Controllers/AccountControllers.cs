@@ -34,7 +34,7 @@ namespace backend_finance.Controllers
                 {
                     var roleUser = await _userManager.AddToRoleAsync(appUser, "User");
                     if (roleUser.Succeeded) {
-                        return Ok("user createds");
+                        return Ok("user created");
                     }
                     else
                     {
